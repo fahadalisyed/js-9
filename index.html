@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert on click</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a href="#" id="myLink">Click me</a>
+<br>
+
+<img width="150px" height="200px"  src="img/modern-realistic-3d-render-smart-phone-generated-ai_644690-2844.avif" alt="Mobile 1" onclick="showAlert('Mobile 1')">
+<img  width="150px" height="200px" src="img/smart-apple-iphone-tempered-glass-mockups-3d-rendering-wallpaper-background-hd_327903-1742338.avif" alt="Mobile 2" onclick="showAlert('Mobile 2')">
+<img width="150px" height="200px" src="img/smartphone-mobile-phone-product-mockup-display-advertising-rendering-mockup-wallpaper-background_912113-186461.jpg" alt="Mobile 3" onclick="showAlert('Mobile 3')">
+
+<br>
+
+<table>
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>Jhon </td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe </td>
+            <td>9</td>
+            <td><button onclick="deleteRow(this)">Delete</button>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark </td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jame </td>
+            <td>8</td>
+            <td><button onclick="deleteRow(this)">Delete</button>
+
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+<br>
+<h1>Image Change on Mouseover</h1>
+    
+    <!-- Image element with initial source -->
+    <img id="image" src="./img/image1.avif" alt="Initial Image" onmouseover="changeImage()" onmouseout="restoreImage()">
+    
+    <br>
+    
+    <div id="counter">0</div>
+
+    <button id ="btn" onclick="increaseCounter()">Increase</button>
+    <button id ="btn" onclick="decreaseCounter()">Decrease</button>
+    
+      
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
